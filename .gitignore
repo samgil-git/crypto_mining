@@ -1,0 +1,5 @@
+notes
+venv/
+py_files/staging/
+py_files/.env
+.DS_Store
