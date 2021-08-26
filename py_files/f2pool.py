@@ -36,7 +36,7 @@ def db_insert(account):
 
     df.insert(0,'account',account) # add account column
     df.insert(0,'date',date.today() - td(days=1)) # add date column
-    df.drop(['hashrate_history','hashrate_history_stale','payout_history','payout_history_fee','last','hashes_last_day','ori_hashes_last_day','ori_value_last_day','value_change','value_today','value_last_day','workers'], axis=1, inplace=True)
+    df.drop(['hashrate_history','hashrate_history_stale','payout_history','payout_history_fee','last','hashes_last_day','ori_hashes_last_day','ori_value_last_day','user_payout','value_change','value_today','value_last_day','workers'], axis=1, inplace=True)
     # df.to_csv('newtest.csv')
 
     ### DB INSERT ###
